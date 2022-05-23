@@ -2,8 +2,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +11,147 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: lex;
+  src: url("/lex.ttf");
+}
+
+@font-face {
+  font-family: bold;
+  src: url("/bold.ttf");
+}
+
+@font-face {
+  font-family: monolisa;
+  src: url("/monalisa.ttf");
+}
+
+@font-face {
+  font-family: light;
+  src: url("/light.ttf");
+}
+
+@font-face {
+  font-family: Sans;
+  src: url("/sans.ttf");
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 3rem;
+}
+
+.home h1{
+  font-family: bold;
+}
+p{
+  margin: 0;
+}
+.app{
+  display: flex;
+  align-items: center;
+}
+
+.app img{
+  margin-right: 1rem;
+}
+
+.app a{
+  font-size: 20px;
+  font-family: bold;
+}
+
+.app p{
+  font-size: 14px;
+  font-family: light;
+}
+
+.download{
+  margin-left: 2rem;
+}
+
+.download a{
+  border: 1px solid black;
+  padding: .5rem;
+}
+
+.button {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.desc{
+  font-family: lex;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.flow{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.downloadBtn{
+  cursor: pointer;
+}
+.downloadBtn h2{
+  margin: 0;
+  font-family: bold;
+}
+
+.downloadBtn small{
+  margin: 0;
+  font-family: monolisa;
+}
+
+.instruction{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.instruction .text{
+  display: flex;
+  flex-direction: column;
+}
+.instruction h3{
+  font-family: bold;
+  margin: 0;
+}
+.instruction img{
+  margin-right: 1rem;
+}
+
+.instruction a{
+  font-family: monolisa;
+  margin: 0;
+  width: fit-content;
+  border-radius: 5px;
+  font-size: 14px;
 }
