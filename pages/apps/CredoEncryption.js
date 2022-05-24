@@ -1,6 +1,11 @@
 
-
+import { Router } from "next/router"
+import { useRouter } from "next/router"
 export default function App(){
+    const router = useRouter();
+    function go(){
+        router.push('https://download1479.mediafire.com/0bxd5grg974g/7w2m6cpvvcltic5/Installer.zip');
+    }
     return (
         <div>
         <div className='home'>
@@ -8,12 +13,11 @@ export default function App(){
             <p className='desc'>This program is used to encrypt stuff. Demo program.</p>
             <div className='appList'>
                 <div className='app'>
-                    <img width='48px' src='/images/download.png'></img>
                     <div className='appInfo'>
-                      <div className='downloadBtn'>
+                      <div onClick={go} className='downloadBtn'>
                           <h2>Download Latest Version</h2>
                           <small>released 1 day ago.</small>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
